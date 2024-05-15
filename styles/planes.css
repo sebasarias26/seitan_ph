@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    overflow: hidden;
+    height: 3em;
+    background-color: #ffffff;
+}
+.navegation {
+    display: flex;
+    overflow: hidden;
+}
+.navegation_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100em;
+    align-items: center;
+    padding: 1em;
+    list-style: none;
+}
+.navigation_options{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.8em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.plans_tittle {
+    margin: 1.5em;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadein 2s forwards;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.basic_plan {
+    display: flex;
+    flex-direction: column;
+}
+.img_basic {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    height: 35em;
+    margin-bottom: 1em;
+}
+.basic_tittle {
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    margin: 1em;
+}
+.basicOptions {
+    text-align: center;
+    gap: 1em;
+}
+.button_option {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: "Work Sans", sans-serif;
+    background-color: azure;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+.basicOptions {
+    list-style: none;
+}
+.button_option:hover {
+    margin-top: 1em;
+    font-size: 1.7em;
+}

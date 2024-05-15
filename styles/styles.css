@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    overflow: hidden;
+    height: 3em;
+    background-color: #1e1e20;
+}
+.navegation {
+    display: flex;
+    overflow: hidden;
+}
+.navegation_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100em;
+    align-items: center;
+    padding: 1em;
+    list-style: none;
+}
+.navigation_options{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.8em;
+}
+.banner {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    height: 55em;
+}
+.bannerText {
+    position: absolute;
+    color: aliceblue;
+    margin-top: 2em;
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-size: 5em;
+    animation: glitch 2s infinite; /* Aplica la animación "glitch" */
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadein 2s forwards; /* Aplica la animación "fadein" */
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        color: rgb(255, 255, 255); /* Cambia al color rojo al inicio */
+    }
+    25% {
+        color: rgb(255, 255, 214); /* Cambia al color amarillo al 25% */
+    }
+    50% {
+        color: rgb(255, 242, 242); /* Cambia al color negro al 50% */
+    }
+    75% {
+        color: rgb(255, 255, 242); /* Otra vez amarillo al 75% */
+    }
+    100% {
+        color: rgb(255, 240, 240); /* Otra vez rojo al 100% */
+    }
+}
+
+footer {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    gap: 1.5em;
+    height: 8em;
+}
+.social_tittle {
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+.socialNet_logos {
+    display: flex;
+    gap: 3em;
+}

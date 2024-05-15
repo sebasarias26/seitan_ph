@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    overflow: hidden;
+    height: 3em;
+    background-color: #000000;
+}
+.navegation {
+    display: flex;
+    overflow: hidden;
+}
+.navegation_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100em;
+    align-items: center;
+    padding: 1em;
+    list-style: none;
+}
+.navigation_options{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.8em;
+}
+main {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+.img_characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.port_tittle {
+    text-align: center;
+    color: aliceblue;
+    margin: 2em;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadein 3s forwards;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.info_worck {
+    display: flex;
+    background-color: black;
+    height: 60em;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.work_img {
+    display: flex;
+    width: 40em;
+    height: 60em;
+}
+.work_img:hover {
+    cursor: pointer;
+    width: 45em;
+    height: 65em;
+    transition: 5s;
+}
+.work_tittle {
+    position: absolute;
+    text-align: center;
+    margin-top: 7em;
+    color: aliceblue;
+    font-family: "Work Sans", sans-serif;
+    font-size: 4em;
+    opacity: 0; 
+    animation: fadein 4s forwards;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
